@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <EditText
+       android:id="@+id/emailsigninET"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="Email address"
+       android:singleLine="true"
+       android:imeOptions="actionNext"
+       android:textAllCaps="false"
+       android:inputType="textEmailAddress"
+       android:textAlignment="center"
+       android:layout_marginTop="15dp"
+       android:layout_margin="10dp"
+       android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/passwordsignindET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:textAllCaps="false"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/signinBtn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Sign in"
+        android:textSize="18sp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/signupTV1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="Are you not registered ? Sign up" />
+
+    <ProgressBar
+        android:id="@+id/progressbarPB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"/>
+
+</LinearLayout>
